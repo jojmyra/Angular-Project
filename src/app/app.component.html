@@ -1,14 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<header>
-  <mat-toolbar color="primary">Angular 6 Bootstrap 4 Example</mat-toolbar>
-</header>
+<app-template-header></app-template-header>
+
 
 <section class="container">
   <div class="row">
-    <mat-card class="col-md-6">1</mat-card> <!-- we use mat-card instead of div -->
-    <mat-card class="col-md-6">2</mat-card>
-    <mat-card class="col-md-6 d-block d-lg-none">3</mat-card> <!-- will be hidden on large screens -->
-    <mat-card class="col-md-6 d-block d-lg-none">4</mat-card>
+    <mat-card id="sidebar" class="col-md-3">
+      <app-template-sidebar></app-template-sidebar>
+    </mat-card>
+    <mat-card class="col-md-9">
+      <!--show content-->
+      content
+    </mat-card>
   </div>
 </section>
 
