@@ -1,3 +1,39 @@
+/* top-header navigation */
+#top-header {
+  height: 40px;
+}
 #offer {
   text-align: center;
+}
+#tnav-right {
+  right: 13px;
+  position: absolute;
+}
+#top-ul li {
+  padding: 0 32px;
+  border-right: 1px solid #E5E5E5;
+}
+/* main navigation */
+#main-nav {
+  padding: 15px;
+  background: #fff;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+#main-nav-home {
+  width: 10%;
+}
+#main-nav-center {
+  width: 70%;
+}
+#main-mav-right {
+  width: 20%;
+  right: 13px;
+  position: absolute;
+}
+
+/* bottom navigation (banner) */
+#bottom-nav {
+  height: 60px;
+  border-bottom: 1px solid #E5E5E5;
 }
