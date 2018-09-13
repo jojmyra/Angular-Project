@@ -46,3 +46,12 @@
 .padleft {
   padding-left: 80%;
 }
+
+/* Login Part */
+.btn-login {
+  background-color: black;
+  color: white;
+}
+.logcheck {
+
+}
