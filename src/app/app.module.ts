@@ -8,12 +8,14 @@ import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material';
 import { TemplateSidebarComponent } from './template-sidebar/template-sidebar.component';
 import { TemplateHeaderComponent } from './template-header/template-header.component';
+import { TemplateFooterComponent } from './template-footer/template-footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TemplateSidebarComponent,
     TemplateHeaderComponent,
+    TemplateFooterComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,6 +1,6 @@
 /* container main */
 #container-main {
-  position: absolute;
+  display: contents;
 }
 #container-item {
   box-shadow: none !important;
@@ -29,4 +29,10 @@
 }
 .item-subtitle {
   margin-bottom: 0px;
+}
+
+#sidebar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
