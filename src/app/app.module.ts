@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterModule } from '@angular/router';
 import { MaterialModule } from './material';
 import { TemplateSidebarComponent } from './template-sidebar/template-sidebar.component';
 import { TemplateHeaderComponent } from './template-header/template-header.component';
@@ -16,7 +18,14 @@ import { TemplateHeaderComponent } from './template-header/template-header.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    HttpClientModule,
+    RouterModule.forRoot([
+      {
+        path: 'sb',
+        component: TemplateSidebarComponent
+      }
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]
