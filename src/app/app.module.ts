@@ -12,6 +12,7 @@ import { TemplateFooterComponent } from './template-footer/template-footer.compo
 import { TemplateHeaderCenterComponent } from './template-header-center/template-header-center.component';
 import { TemplateHeaderBottomComponent } from './template-header-bottom/template-header-bottom.component';
 import { ItemComponent } from './item/item.component';
+import { AuthService } from './auth.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,7 @@ import { ItemComponent } from './item/item.component';
       }
     ])
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

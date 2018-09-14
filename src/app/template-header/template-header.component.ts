@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService} from '../auth.service';
 
 @Component({
   selector: 'app-template-header',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateHeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private Auth: AuthService) { }
 
   ngOnInit() {
   }
@@ -18,6 +19,7 @@ export class TemplateHeaderComponent implements OnInit {
     const target = event.target;
     const username = target.querySelector('#usr').value;
     const password = target.querySelector('#pwd').value;
+    this.Auth.getLoginDetails(username, password);
     console.log(username, password);
   }
 

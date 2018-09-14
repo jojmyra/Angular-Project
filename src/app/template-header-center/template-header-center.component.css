@@ -16,6 +16,9 @@
   right: 13px;
   position: absolute;
 }
+#search-form {
+  border: 1px solid #E5E5E5;
+}
 .nav-center {
   padding-left: 32%;
 }
@@ -25,4 +28,11 @@
 }
 .nav-center li a:hover{
   color: #ccc;
+}
+.btn-serach {
+  background-color: #fff;
+}
+.search-input {
+  border: none;
+  width: 140px;
 }
