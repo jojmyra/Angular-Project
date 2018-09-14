@@ -5,6 +5,12 @@
   padding: 0px;
 }
 .category-h1 {
+  padding-top: 10px;
   padding-bottom: 10px;
   border-bottom: 1px solid #ccc;
+  font-size: x-large;
+  font-weight: bolder;
+}
+.checkbox-font {
+  font-size: small;
 }

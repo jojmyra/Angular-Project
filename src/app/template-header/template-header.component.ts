@@ -12,4 +12,13 @@ export class TemplateHeaderComponent implements OnInit {
   ngOnInit() {
   }
 
+
+  loginUser(event) {
+    event.preventDefault();
+    const target = event.target;
+    const username = target.querySelector('#usr').value;
+    const password = target.querySelector('#pwd').value;
+    console.log(username, password);
+  }
+
 }

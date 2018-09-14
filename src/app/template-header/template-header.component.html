@@ -38,14 +38,13 @@
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
+        <form (submit)="loginUser($event)" id="login-form">
         <div class="modal-body">
           <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
           <div class="form-group">
-
             <input placeholder="อีเมล์" type="text" class="form-control" id="usr">
           </div>
           <div class="form-group">
-
             <input placeholder="รหัสผ่าน" type="password" class="form-control" id="pwd">
           </div>
           <div class="checkbox">
@@ -54,10 +53,12 @@
             </label>
           </div>
         </div>
+        </form>
         <div class="modal-footer">
           <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-          <button type="button" class="btn btn-login btn-block">ล็อคอิน</button>
+          <button type="submit" value="submit" form="login-form" class="btn btn-login btn-block">ล็อคอิน</button>
         </div>
+
         <div class="unregister">ไม่ใช่สมาชิกใช่ไหม</div>
       </div>
     </div>
