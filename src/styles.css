@@ -7,3 +7,11 @@
 * {
   font-family: 'Prompt', sans-serif ;
 }
+
+.list-black li a {
+  color: #000000;
+}
+
+.list-white li a {
+  color: #ffffff;
+}

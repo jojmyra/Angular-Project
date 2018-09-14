@@ -1,3 +1,14 @@
 #footer {
   background-color: #191919;
 }
+.footer-detail {
+  padding-top: 30px;
+}
+#footer-group {
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+#footer-group * {
+  color: #999;
+  font-size: small;
+}

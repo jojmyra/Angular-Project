@@ -35,4 +35,6 @@
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  padding-left: 60px;
+  padding-right: 80px;
 }
