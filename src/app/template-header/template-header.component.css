@@ -15,7 +15,7 @@
 }
 /* main navigation */
 #main-nav {
-  padding: 15px;
+  padding: 10px;
   background: #fff;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
@@ -52,6 +52,11 @@
   background-color: black;
   color: white;
 }
+.btn-nav-login {
+  background-color: #fff;
+  color: rgba(0,0,0,.5);
+  font-size: small;
+}
 .logcheck {
 
 }
@@ -61,5 +66,18 @@
   padding-bottom: 13px;
 }
 .nav-center {
-  padding-left: 40%;
+  padding-left: 34%;
+}
+.nav-center li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.logo-center {
+  display: block;
+  margin-left: 38%;
+  /*margin-right: auto;*/
+  width: 50%;
+}
+.modal-title {
+  padding-bottom: 10px;
 }

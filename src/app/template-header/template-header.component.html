@@ -2,20 +2,20 @@
 
   <ul id="top-ul" class="navbar-nav mr-auto mt-2 mt-lg-0">
     <li class="nav-item active">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="#">ความช่วยเหลือ</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
+    <!--<li class="nav-item">-->
+      <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+    <!--</li>-->
   </ul>
 
   <ul id="tnav-right" class="navbar-nav mr-auto mt-2 mt-lg-0">
     <li class="nav-item">
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-        Login
+      <button type="button" class="btn btn-nav-login" data-toggle="modal" data-target="#exampleModal">
+        เข้าร่วม/ล็อคอินเข้าสู่ระบบ
       </button>
     </li>
 
@@ -29,13 +29,17 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <div class="login-top">
+            <img class="logo-center" src="assets/img/logo.png"/>
+          </div>
+
 
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
+          <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
           <div class="form-group">
 
             <input placeholder="อีเมล์" type="text" class="form-control" id="usr">
@@ -70,25 +74,32 @@
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
     <a class="navbar-brand" href="#">
-      <i class="material-icons">
-        local_atm
-      </i>
+      <img width="90" height="60" src="assets/img/logo.png"/>
     </a>
 
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-center">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 nav-center flex-lg-row">
+      <!--<li class="nav-item active">-->
+        <!--<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>-->
+      <!--</li>-->
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#">บุรุษ</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">สตรี</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">เด็กชาย</a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">เด็กหญิง</a>
+      </li>
+      <!--<li class="nav-item">-->
+        <!--<a class="nav-link disabled" href="#">Disabled</a>-->
+      <!--</li>-->
     </ul>
 
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="search" placeholder="ค้นหา ..." aria-label="Search">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
         <i class="material-icons">
           search
