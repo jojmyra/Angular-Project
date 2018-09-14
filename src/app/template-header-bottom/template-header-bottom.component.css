@@ -1,0 +1,14 @@
+/* bottom navigation (banner) */
+#bottom-nav {
+  height: 60px;
+  border-bottom: 1px solid #E5E5E5;
+}
+#bottom-nav .container .row {
+  display: contents;
+}
+.center-text {
+  text-align: center;
+}
+.padleft {
+  padding-left: 80%;
+}

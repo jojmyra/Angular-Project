@@ -9,6 +9,9 @@ import { MaterialModule } from './material';
 import { TemplateSidebarComponent } from './template-sidebar/template-sidebar.component';
 import { TemplateHeaderComponent } from './template-header/template-header.component';
 import { TemplateFooterComponent } from './template-footer/template-footer.component';
+import { TemplateHeaderCenterComponent } from './template-header-center/template-header-center.component';
+import { TemplateHeaderBottomComponent } from './template-header-bottom/template-header-bottom.component';
+import { ItemComponent } from './item/item.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +19,9 @@ import { TemplateFooterComponent } from './template-footer/template-footer.compo
     TemplateSidebarComponent,
     TemplateHeaderComponent,
     TemplateFooterComponent,
+    TemplateHeaderCenterComponent,
+    TemplateHeaderBottomComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,

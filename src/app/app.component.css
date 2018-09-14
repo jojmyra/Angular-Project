@@ -5,32 +5,7 @@
 #container-item {
   box-shadow: none !important;
 }
-.item-main {
-  margin-left: 5px;
-  margin-bottom: 5px;
-  padding: 35px;
-  box-shadow: none !important;
-}
-.item-main:hover {
-  padding: 35px;
-  -webkit-box-shadow: inset 0px 0px 0px 1px rgba(204,204,204,1);
-  -moz-box-shadow: inset 0px 0px 0px 1px rgba(204,204,204,1);
-  box-shadow: 0px 0px 0px 1px rgba(204,204,204,1) !important;
-}
-.item-header {
-  border-bottom: 1px solid #CCC;
-}
-.item-header .mat-card-header-text {
-  margin: 0px !important;
-}
-.item-title {
-  font-weight: bold;
-  margin: 0px;
-}
-.item-subtitle {
-  margin-bottom: 0px;
-}
-
+/*  sidebar */
 #sidebar {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;

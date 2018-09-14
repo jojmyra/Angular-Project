@@ -1,0 +1,28 @@
+/* main navigation */
+#main-nav {
+  padding: 10px;
+  background: #fff;
+  border-top: 1px solid #E5E5E5;
+  border-bottom: 1px solid #E5E5E5;
+}
+#main-nav-home {
+  width: 10%;
+}
+#main-nav-center {
+  width: 70%;
+}
+#main-mav-right {
+  width: 20%;
+  right: 13px;
+  position: absolute;
+}
+.nav-center {
+  padding-left: 32%;
+}
+.nav-center li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.nav-center li a:hover{
+  color: #ccc;
+}

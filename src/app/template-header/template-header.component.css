@@ -13,39 +13,7 @@
   padding: 0 32px;
   border-right: 1px solid #E5E5E5;
 }
-/* main navigation */
-#main-nav {
-  padding: 10px;
-  background: #fff;
-  border-top: 1px solid #E5E5E5;
-  border-bottom: 1px solid #E5E5E5;
-}
-#main-nav-home {
-  width: 10%;
-}
-#main-nav-center {
-  width: 70%;
-}
-#main-mav-right {
-  width: 20%;
-  right: 13px;
-  position: absolute;
-}
 
-/* bottom navigation (banner) */
-#bottom-nav {
-  height: 60px;
-  border-bottom: 1px solid #E5E5E5;
-}
-#bottom-nav .container .row {
-  display: contents;
-}
-.center-text {
-  text-align: center;
-}
-.padleft {
-  padding-left: 80%;
-}
 
 /* Login Part */
 .btn-login {
@@ -57,20 +25,10 @@
   color: rgba(0,0,0,.5);
   font-size: small;
 }
-.logcheck {
-
-}
 .unregister{
   text-align: center;
   font-size: 13px;
   padding-bottom: 13px;
-}
-.nav-center {
-  padding-left: 34%;
-}
-.nav-center li {
-  padding-left: 10px;
-  padding-right: 10px;
 }
 .logo-center {
   display: block;
