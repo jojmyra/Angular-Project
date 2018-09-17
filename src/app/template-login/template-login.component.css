@@ -1,0 +1,25 @@
+/* Login Part */
+.btn-login {
+  background-color: black;
+  color: white;
+}
+.logo-center {
+  display: block;
+  margin-left: 38%;
+  /*margin-right: auto;*/
+  width: 50%;
+}
+.modal-title {
+  padding-bottom: 10px;
+}
+.unregister{
+  text-align: center;
+  font-size: 13px;
+  padding-left: 0;
+  /*padding-bottom: 13px;*/
+}
+.btn-nav-regiser {
+  background-color: #fff;
+  color: rgba(0,0,0,.5);
+  font-size: small;
+}

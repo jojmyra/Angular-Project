@@ -13,6 +13,10 @@ import { TemplateHeaderCenterComponent } from './template-header-center/template
 import { TemplateHeaderBottomComponent } from './template-header-bottom/template-header-bottom.component';
 import { ItemComponent } from './item/item.component';
 import { AuthService } from './auth.service';
+import { TemplateLoginComponent } from './template-login/template-login.component';
+import { TemplateRegisterComponent } from './template-register/template-register.component';
+import { TemplateConditionalComponent } from './template-conditional/template-conditional.component';
+import { TemplateContactComponent } from './template-contact/template-contact.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +26,11 @@ import { AuthService } from './auth.service';
     TemplateFooterComponent,
     TemplateHeaderCenterComponent,
     TemplateHeaderBottomComponent,
-    ItemComponent
+    ItemComponent,
+    TemplateLoginComponent,
+    TemplateRegisterComponent,
+    TemplateConditionalComponent,
+    TemplateContactComponent
   ],
   imports: [
     BrowserModule,

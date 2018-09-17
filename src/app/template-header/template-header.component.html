@@ -14,54 +14,15 @@
 
   <ul id="tnav-right" class="navbar-nav mr-auto mt-2 mt-lg-0">
     <li class="nav-item">
-      <button type="button" class="btn btn-nav-login" data-toggle="modal" data-target="#exampleModal">
+      <button type="button" class="btn btn-nav-login" data-toggle="modal" data-target="#loginModal">
         เข้าร่วม/ล็อคอินเข้าสู่ระบบ
       </button>
     </li>
-
   </ul>
 
-  <script>
-      $('#myModal').modal('show');
-  </script>
+  <!--<script>-->
+      <!--$('#myModal').modal('show');-->
+  <!--</script>-->
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <div class="login-top">
-            <img class="logo-center" src="assets/img/logo.png"/>
-          </div>
-
-
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <form (submit)="loginUser($event)" id="login-form">
-        <div class="modal-body">
-          <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
-          <div class="form-group">
-            <input placeholder="อีเมล์" type="text" class="form-control" id="usr">
-          </div>
-          <div class="form-group">
-            <input placeholder="รหัสผ่าน" type="password" class="form-control" id="pwd">
-          </div>
-          <div class="checkbox">
-            <label class=""checklabel>
-              <input class="logcheck" type="checkbox" value=""> ให้ฉันอยู่ในระบบต่อไป
-            </label>
-          </div>
-        </div>
-        </form>
-        <div class="modal-footer">
-          <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-          <button type="submit" value="submit" form="login-form" class="btn btn-login btn-block">ล็อคอิน</button>
-        </div>
-
-        <div class="unregister">ไม่ใช่สมาชิกใช่ไหม</div>
-      </div>
-    </div>
-  </div>
-
+  <app-template-login></app-template-login>
 </header>

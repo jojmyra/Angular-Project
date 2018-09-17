@@ -13,29 +13,9 @@
   padding: 0 32px;
   border-right: 1px solid #E5E5E5;
 }
-
-
-/* Login Part */
-.btn-login {
-  background-color: black;
-  color: white;
-}
 .btn-nav-login {
   background-color: #fff;
   color: rgba(0,0,0,.5);
   font-size: small;
 }
-.unregister{
-  text-align: center;
-  font-size: 13px;
-  padding-bottom: 13px;
-}
-.logo-center {
-  display: block;
-  margin-left: 38%;
-  /*margin-right: auto;*/
-  width: 50%;
-}
-.modal-title {
-  padding-bottom: 10px;
-}
+
