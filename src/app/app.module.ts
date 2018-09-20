@@ -17,6 +17,7 @@ import { TemplateLoginComponent } from './template-login/template-login.componen
 import { TemplateRegisterComponent } from './template-register/template-register.component';
 import { TemplateConditionalComponent } from './template-conditional/template-conditional.component';
 import { TemplateContactComponent } from './template-contact/template-contact.component';
+import { ItemDetailComponent } from './item-detail/item-detail.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TemplateContactComponent } from './template-contact/template-contact.co
     TemplateLoginComponent,
     TemplateRegisterComponent,
     TemplateConditionalComponent,
-    TemplateContactComponent
+    TemplateContactComponent,
+    ItemDetailComponent
   ],
   imports: [
     BrowserModule,
