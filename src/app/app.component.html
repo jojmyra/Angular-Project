@@ -1,26 +1,2 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<app-template-header></app-template-header>
-<app-template-header-center></app-template-header-center>
-<app-template-header-bottom></app-template-header-bottom>
-
-<section id="container-main" class="container">
-  <div class="row">
-    <mat-card id="sidebar" class="col-md-2">
-      <app-template-sidebar></app-template-sidebar>
-    </mat-card>
-    <mat-card id="container-item" class="col-md-10">
-      <!--show content-->
-      <div class="row">
-        <h2 class="category-h2">รองเท้าบุรุษ</h2>
-        <span style="font-size: 1.5rem;padding-top: 1px;padding-left: 3px;color: #999;">(100)</span>
-      </div>
-
-      <!--<app-item></app-item>-->
-      <!--<app-template-contact></app-template-contact>-->
-      <app-item-detail></app-item-detail>
-    </mat-card>
-
-  </div>
-</section>
-
-<app-template-footer></app-template-footer>
+<router-outlet></router-outlet>
+<app-template-backtotop></app-template-backtotop>

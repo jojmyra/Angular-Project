@@ -15,3 +15,21 @@
 .list-white li a {
   color: #ffffff;
 }
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #212529;
+}
+
+::selection {
+  color: white;
+  background: #212529;
+}

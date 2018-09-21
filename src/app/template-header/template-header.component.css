@@ -12,3 +12,6 @@
   padding: 0 32px;
   border-right: 1px solid #E5E5E5;
 }
+.top-ul-link {
+  display: contents !important;
+}

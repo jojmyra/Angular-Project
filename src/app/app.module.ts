@@ -24,6 +24,9 @@ import { TemplateRegisterComponent } from './template-register/template-register
 import { TemplateConditionalComponent } from './template-conditional/template-conditional.component';
 import { TemplateContactComponent } from './template-contact/template-contact.component';
 import { ItemDetailComponent } from './item-detail/item-detail.component';
+import { HomeComponent } from './home/home.component';
+import { HomeNoSidebarComponent } from './home-no-sidebar/home-no-sidebar.component';
+import { TemplateBacktotopComponent } from './template-backtotop/template-backtotop.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +41,10 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     TemplateRegisterComponent,
     TemplateConditionalComponent,
     TemplateContactComponent,
-    ItemDetailComponent
+    ItemDetailComponent,
+    HomeComponent,
+    HomeNoSidebarComponent,
+    TemplateBacktotopComponent
   ],
   imports: [
     BrowserModule,
@@ -49,8 +55,16 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
     AlertsModule.forRoot(),
     RouterModule.forRoot([
       {
-        path: 'sb',
-        component: TemplateSidebarComponent
+        path: '',
+        component: HomeComponent
+      },
+      {
+        path: 'contact',
+        component: HomeNoSidebarComponent
+      },
+      {
+        path: 'condition',
+        component: TemplateConditionalComponent
       }
     ])
   ],

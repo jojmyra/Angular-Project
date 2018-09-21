@@ -17,15 +17,11 @@ export class TemplateLoginComponent implements OnInit {
   emailAccount = '';
 
   ngOnInit() {
-
+    this.logginStatus = this.Auth.isLoggedIn;
+    this.emailAccount = this.Auth.getEmail;
   }
 
-  loggedIn(email){
-    this.emailAccount = email;
-  }
 
-  submit(event) {
-  }
 
   open(content) {
     this.modalService.dismissAll();
@@ -48,6 +44,7 @@ export class TemplateLoginComponent implements OnInit {
 
   logout() {
     this.logginStatus = false;
+    this.Auth.setLoggedIn(false);
   }
 
   loginUser(event) {
@@ -55,30 +52,27 @@ export class TemplateLoginComponent implements OnInit {
     const target = event.target;
     const email = target.querySelector('#email').value;
     const password = target.querySelector('#pass').value;
-    
     this.Auth.getLoginDetails(email, password).subscribe(data => {
       console.log(data);
-      
-      if(data.success){
+      if (data.success) {
         console.log("true");
         this.logginStatus = true;
-        this.loggedIn(email);
+        this.Auth.setLoggedIn(true);
+        this.Auth.setEmail(email);
         window.alert("เข้าสู่ระบบสำเร็จ!")
+        this.ngOnInit();
         this.modalService.dismissAll();
-        
       } else {
         console.log("false");
-        
         console.log(data.message);
         console.log(data.token);
-        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!")
+        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!");
       }
     }, err => {
-      if(!err.success) {
-        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!")
+      if (!err.success) {
+        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!");
       }
-      
-    })
+    });
   }
 
   registerUser(event) {
@@ -90,7 +84,6 @@ export class TemplateLoginComponent implements OnInit {
     const telephone = target.querySelector('#reg-tel').value;
     const birthDay = target.querySelector('#reg-bd').value;
     const cfpassword = target.querySelector('#reg-cfpwd').value;
-    
     this.Auth.register(email, password, name, telephone, birthDay).subscribe(data => {
       if(data.success){
         alert("สมัครสมาชิกสำเร็จ !");

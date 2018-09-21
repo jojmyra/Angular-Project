@@ -32,9 +32,11 @@
         <div class="modal-body">
           <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
           <div class="form-group">
+            <span class="input-group-addon"><i class="material-icons">email</i></span>
             <input placeholder="อีเมล์" type="text" class="form-control" id="email">
           </div>
           <div class="form-group">
+            <span class="input-group-addon"><i class="material-icons">vpn_key</i></span>
             <input placeholder="รหัสผ่าน" type="password" class="form-control" id="pass">
           </div>
           <div class="checkbox">
@@ -52,51 +54,57 @@
       <ul class="unregister">
         <li class="nav-item">
           <button type="button" class="btn btn-nav-regiser" (click)="open(register)">
-            ไม่ใช่สมาชิกใช่ไหม
+            ไม่ใช่สมาชิกใช่ไหม ?
           </button>
         </li>
       </ul>
 
     </ng-template>
-    
+
 
 
 
     <ng-template #register let-modal>
         <div class="modal-header">
           <div class="login-top">
-            <img class="logo-center" src="assets/img/logo2.png"/>
+            <img class="logo-center" src="assets/img/logo3.png"/>
           </div>
-  
-  
+
+
           <button type="button" class="close" (click)="modal.dismiss('cross click')">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <form (submit)="registerUser($event)" id="register-form">
           <div class="modal-body">
-            <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
+            <h5 class="modal-title" id="regsiterModalLabel">ใส่บัญชีของคุณ</h5>
             <div class="form-group">
+              <span class="input-group-addon"><i class="material-icons">email</i></span>
               <input placeholder="อีเมล์" type="text" class="form-control" id="reg-email">
             </div>
             <div class="form-group">
+              <span class="input-group-addon"><i class="material-icons">vpn_key</i></span>
               <input placeholder="รหัสผ่าน" type="password" class="form-control" id="reg-pwd">
             </div>
             <div class="form-group">
+              <span class="input-group-addon"><i class="material-icons">vpn_key</i></span>
               <input placeholder="ยืนยันรหัสผ่าน" type="password" class="form-control" id="reg-cfpwd">
             </div>
             <div class="form-group">
+              <span class="input-group-addon"><i class="material-icons">person</i></span>
               <input placeholder="ชื่อ-สกุล" type="text" class="form-control" id="reg-name">
             </div>
             <div class="form-group">
+              <span class="input-group-addon"><i class="material-icons">phone</i></span>
               <input placeholder="เบอร์โทรศัพท์" type="number" class="form-control" id="reg-tel">
             </div>
             <div class="form-group">
+              <span class="input-group-addon"><i class="material-icons">date_range</i></span>
               <input placeholder="วัน/เดือน/ปีเกิด" onfocus="(this.type='date')" type="text" class="form-control" id="reg-bd">
             </div>
             <div class="checkbox">
               <label class="" checklabel>
-                <input class="logcheck" type="checkbox" value=""> ยอมรับข้อตกลงการใช้งาน
+                <input class="logcheck" type="checkbox" value=""> ยอมรับ<a routerLink="/condition">ข้อตกลงการใช้งาน</a>
               </label>
             </div>
           </div>
@@ -105,7 +113,7 @@
           <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
           <button type="submit" value="submit" form="register-form" class="btn btn-login btn-block">สมัครสมาชิก</button>
         </div>
-  
+
       </ng-template>
 
 <!-- <app-template-register></app-template-register> -->

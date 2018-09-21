@@ -1,11 +1,14 @@
 <header id="top-header" class="navbar navbar-expand-lg navbar-light bg-white">
 
   <ul id="top-ul" class="navbar-nav mr-auto mt-2 mt-lg-0">
-    <li class="nav-item active">
-      <a class="nav-link" href="#">หน้าแรก <span class="sr-only">(current)</span></a>
+    <li class="nav-item">
+      <a class="nav-link top-ul-link" routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">หน้าแรก <span class="sr-only">(current)</span></a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">ความช่วยเหลือ</a>
+      <a class="nav-link top-ul-link"  routerLink="/contact" routerLinkActive="active">ติดต่อเรา</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link top-ul-link"  routerLink="/condition" routerLinkActive="active">ข้อตกลงการใช้งาน</a>
     </li>
     <!--<li class="nav-item">-->
       <!--<a class="nav-link disabled" href="#">Disabled</a>-->

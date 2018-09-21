@@ -15,15 +15,25 @@ interface Register {
 export class AuthService {
 
   private loggedInStatus = false;
+  private emailAccount = '';
 
   constructor(private http: HttpClient) { }
 
   setLoggedIn(value: boolean) {
     this.loggedInStatus = value;
+
+  }
+
+  setEmail(email: string) {
+    this.emailAccount = email;
   }
 
   get isLoggedIn() {
     return this.loggedInStatus;
+  }
+
+  get getEmail() {
+    return this.emailAccount;
   }
 
   getLoginDetails(email, password) {
