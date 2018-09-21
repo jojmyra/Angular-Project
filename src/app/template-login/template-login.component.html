@@ -1,14 +1,30 @@
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+<ul id="tnav-right" class="navbar-nav mr-auto mt-2 mt-lg-0">
+  <li class="nav-item" *ngIf="!logginStatus">
+    <button type="button" class="btn btn-nav-login" (click)="open(login)">
+      เข้าร่วม/ล็อคอินเข้าสู่ระบบ
+    </button>
+  </li>
+  <li class="nav-item" *ngIf="logginStatus">
+    <button type="button" class="btn btn-nav-login">
+      {{emailAccount}}
+    </button>
+  </li>
+  <li class="nav-item" *ngIf="logginStatus">
+    <button type="button" class="btn btn-nav-login" (click)="logout()">
+      logout
+    </button>
+  </li>
+</ul>
+
+
+    <ng-template #login let-modal>
       <div class="modal-header">
         <div class="login-top">
           <img class="logo-center" src="assets/img/logo3.png"/>
         </div>
 
 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" (click)="modal.dismiss('Cross click')" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -16,10 +32,10 @@
         <div class="modal-body">
           <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
           <div class="form-group">
-            <input placeholder="อีเมล์" type="text" class="form-control" id="usr">
+            <input placeholder="อีเมล์" type="text" class="form-control" id="email">
           </div>
           <div class="form-group">
-            <input placeholder="รหัสผ่าน" type="password" class="form-control" id="pwd">
+            <input placeholder="รหัสผ่าน" type="password" class="form-control" id="pass">
           </div>
           <div class="checkbox">
             <label class="" checklabel>
@@ -35,14 +51,61 @@
 
       <ul class="unregister">
         <li class="nav-item">
-          <button type="button" class="btn btn-nav-regiser" data-toggle="modal" data-target="#regisModal">
+          <button type="button" class="btn btn-nav-regiser" (click)="open(register)">
             ไม่ใช่สมาชิกใช่ไหม
           </button>
         </li>
       </ul>
 
-    </div>
-  </div>
-</div>
+    </ng-template>
+    
 
-<app-template-register></app-template-register>
+
+
+    <ng-template #register let-modal>
+        <div class="modal-header">
+          <div class="login-top">
+            <img class="logo-center" src="assets/img/logo2.png"/>
+          </div>
+  
+  
+          <button type="button" class="close" (click)="modal.dismiss('cross click')">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <form (submit)="registerUser($event)" id="register-form">
+          <div class="modal-body">
+            <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
+            <div class="form-group">
+              <input placeholder="อีเมล์" type="text" class="form-control" id="reg-email">
+            </div>
+            <div class="form-group">
+              <input placeholder="รหัสผ่าน" type="password" class="form-control" id="reg-pwd">
+            </div>
+            <div class="form-group">
+              <input placeholder="ยืนยันรหัสผ่าน" type="password" class="form-control" id="reg-cfpwd">
+            </div>
+            <div class="form-group">
+              <input placeholder="ชื่อ-สกุล" type="text" class="form-control" id="reg-name">
+            </div>
+            <div class="form-group">
+              <input placeholder="เบอร์โทรศัพท์" type="number" class="form-control" id="reg-tel">
+            </div>
+            <div class="form-group">
+              <input placeholder="วัน/เดือน/ปีเกิด" onfocus="(this.type='date')" type="text" class="form-control" id="reg-bd">
+            </div>
+            <div class="checkbox">
+              <label class="" checklabel>
+                <input class="logcheck" type="checkbox" value=""> ยอมรับข้อตกลงการใช้งาน
+              </label>
+            </div>
+          </div>
+        </form>
+        <div class="modal-footer">
+          <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+          <button type="submit" value="submit" form="register-form" class="btn btn-login btn-block">สมัครสมาชิก</button>
+        </div>
+  
+      </ng-template>
+
+<!-- <app-template-register></app-template-register> -->

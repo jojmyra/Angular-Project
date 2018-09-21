@@ -18,7 +18,19 @@
   padding-left: 0;
   /*padding-bottom: 13px;*/
 }
+.unregister li {
+  display: contents;
+}
 .btn-nav-regiser {
+  background-color: #fff;
+  color: rgba(0,0,0,.5);
+  font-size: small;
+}
+#tnav-right {
+  right: 13px;
+  position: absolute;
+}
+.btn-nav-login {
   background-color: #fff;
   color: rgba(0,0,0,.5);
   font-size: small;
