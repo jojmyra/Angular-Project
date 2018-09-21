@@ -14,13 +14,5 @@ export class TemplateHeaderComponent implements OnInit {
   }
 
 
-  loginUser(event) {
-    event.preventDefault();
-    const target = event.target;
-    const username = target.querySelector('#usr').value;
-    const password = target.querySelector('#pwd').value;
-    this.Auth.getLoginDetails(username, password);
-    console.log(username, password);
-  }
 
 }

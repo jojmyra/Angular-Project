@@ -1,21 +1,14 @@
 /* top-header navigation */
 #top-header {
   height: 40px;
+  display: grid;
 }
+
 #offer {
   text-align: center;
 }
-#tnav-right {
-  right: 13px;
-  position: absolute;
-}
+
 #top-ul li {
   padding: 0 32px;
   border-right: 1px solid #E5E5E5;
 }
-.btn-nav-login {
-  background-color: #fff;
-  color: rgba(0,0,0,.5);
-  font-size: small;
-}
-

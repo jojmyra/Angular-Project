@@ -1,37 +1,35 @@
-<div class="modal fade" id="regisModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+
+    <ng-template #register let-modal>
       <div class="modal-header">
         <div class="login-top">
           <img class="logo-center" src="assets/img/logo2.png"/>
         </div>
 
 
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <button type="button" class="close" (click)="modal.dismiss('cross click')">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form (submit)="loginUser($event)" id="login-form">
+      <form (submit)="registerUser($event)" id="register-form">
         <div class="modal-body">
           <h5 class="modal-title" id="exampleModalLabel">ใส่บัญชีของคุณ</h5>
           <div class="form-group">
-            <input placeholder="อีเมล์" type="text" class="form-control" id="usr">
+            <input placeholder="อีเมล์" type="text" class="form-control" id="reg-email">
           </div>
           <div class="form-group">
-            <input placeholder="รหัสผ่าน" type="password" class="form-control" id="pwd">
+            <input placeholder="รหัสผ่าน" type="password" class="form-control" id="reg-pwd">
           </div>
           <div class="form-group">
-            <input placeholder="ยืนยันรหัสผ่าน" type="password" class="form-control" id="cfpwd">
+            <input placeholder="ยืนยันรหัสผ่าน" type="password" class="form-control" id="reg-cfpwd">
           </div>
           <div class="form-group">
-            <input placeholder="ชื่อ-สกุล" type="text" class="form-control" id="name">
+            <input placeholder="ชื่อ-สกุล" type="text" class="form-control" id="reg-name">
           </div>
           <div class="form-group">
-            <input placeholder="เบอร์โทรศัพท์" type="text" class="form-control" id="tel">
+            <input placeholder="เบอร์โทรศัพท์" type="number" class="form-control" id="reg-tel">
           </div>
           <div class="form-group">
-            <input placeholder="วัน/เดือน/ปีเกิด" onfocus="(this.type='date')" type="text" class="form-control" id="bd">
+            <input placeholder="วัน/เดือน/ปีเกิด" onfocus="(this.type='date')" type="text" class="form-control" id="reg-bd">
           </div>
           <div class="checkbox">
             <label class="" checklabel>
@@ -42,10 +40,7 @@
       </form>
       <div class="modal-footer">
         <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-        <button type="submit" value="submit" form="login-form" class="btn btn-login btn-block">สมัครสมาชิค</button>
+        <button type="submit" value="submit" form="register-form" class="btn btn-login btn-block">สมัครสมาชิค</button>
       </div>
 
-
-    </div>
-  </div>
-</div>
+    </ng-template>
