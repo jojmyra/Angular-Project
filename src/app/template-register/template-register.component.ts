@@ -51,9 +51,7 @@ export class TemplateRegisterComponent implements OnInit {
     const name = target.querySelector('#reg-name').value;
     const telephone = target.querySelector('#reg-tel').value;
     const birthDay = target.querySelector('#reg-bd').value;
-    const cfpassword = target.querySelector('#reg-cfpwd').value;
-    console.log(telephone);
-    
+    const cfpassword = target.querySelector('#reg-cfpwd').value;    
     
     this.Auth.register(email, password, name, telephone, birthDay).subscribe(data => {
       if(data.success){

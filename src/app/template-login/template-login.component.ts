@@ -28,6 +28,7 @@ export class TemplateLoginComponent implements OnInit {
   }
 
   open(content) {
+    this.modalService.dismissAll();
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
@@ -43,6 +44,10 @@ export class TemplateLoginComponent implements OnInit {
     } else {
       return  `with: ${reason}`;
     }
+  }
+
+  logout() {
+    this.logginStatus = false;
   }
 
   loginUser(event) {
@@ -73,6 +78,26 @@ export class TemplateLoginComponent implements OnInit {
         window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!")
       }
       
+    })
+  }
+
+  registerUser(event) {
+    event.preventDefault();
+    const target = event.target;
+    const email = target.querySelector('#reg-email').value;
+    const password = target.querySelector('#reg-pwd').value;
+    const name = target.querySelector('#reg-name').value;
+    const telephone = target.querySelector('#reg-tel').value;
+    const birthDay = target.querySelector('#reg-bd').value;
+    const cfpassword = target.querySelector('#reg-cfpwd').value;
+    
+    this.Auth.register(email, password, name, telephone, birthDay).subscribe(data => {
+      if(data.success){
+        alert("สมัครสมาชิกสำเร็จ !");
+        this.modalService.dismissAll();
+      } else {
+        alert("ไม่สามารถสมัครสมาชิกได้ กรุณาลองใหม่อีกครั้ง!");
+      }
     })
   }
 }

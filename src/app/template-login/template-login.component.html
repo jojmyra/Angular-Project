@@ -10,7 +10,7 @@
     </button>
   </li>
   <li class="nav-item" *ngIf="logginStatus">
-    <button type="button" class="btn btn-nav-login">
+    <button type="button" class="btn btn-nav-login" (click)="logout()">
       logout
     </button>
   </li>
@@ -103,7 +103,7 @@
         </form>
         <div class="modal-footer">
           <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
-          <button type="submit" value="submit" form="register-form" class="btn btn-login btn-block">สมัครสมาชิค</button>
+          <button type="submit" value="submit" form="register-form" class="btn btn-login btn-block">สมัครสมาชิก</button>
         </div>
   
       </ng-template>
