@@ -27,6 +27,11 @@ import { ItemDetailComponent } from './item-detail/item-detail.component';
 import { HomeComponent } from './home/home.component';
 import { HomeNoSidebarComponent } from './home-no-sidebar/home-no-sidebar.component';
 import { TemplateBacktotopComponent } from './template-backtotop/template-backtotop.component';
+import { TemplateAgreementComponent } from './template-agreement/template-agreement.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { MatGridListModule, MatCardModule, MatMenuModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { LayoutModule } from '@angular/cdk/layout';
 
 @NgModule({
   declarations: [
@@ -44,7 +49,11 @@ import { TemplateBacktotopComponent } from './template-backtotop/template-backto
     ItemDetailComponent,
     HomeComponent,
     HomeNoSidebarComponent,
-    TemplateBacktotopComponent
+    TemplateBacktotopComponent,
+    TemplateAgreementComponent,
+    AdminComponent,
+    AdminDashboardComponent
+
   ],
   imports: [
     BrowserModule,
@@ -65,8 +74,22 @@ import { TemplateBacktotopComponent } from './template-backtotop/template-backto
       {
         path: 'condition',
         component: TemplateConditionalComponent
+      },
+      {
+        path: 'agreement',
+        component: TemplateAgreementComponent
+      },
+      {
+        path: 'admin',
+        component: AdminComponent
       }
-    ])
+    ]),
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
+    MatButtonModule,
+    LayoutModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

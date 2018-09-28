@@ -11,7 +11,7 @@
       "schematics": {},
       "targets": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browfser",
           "options": {
             "outputPath": "dist/website",
             "index": "src/index.html",
