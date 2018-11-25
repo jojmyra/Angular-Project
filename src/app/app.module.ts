@@ -82,6 +82,10 @@ import { LayoutModule } from '@angular/cdk/layout';
       {
         path: 'admin',
         component: AdminComponent
+      },
+      {
+        path: 'products/:id',
+        component: ItemDetailComponent
       }
     ]),
     MatGridListModule,
