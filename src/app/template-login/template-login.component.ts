@@ -66,11 +66,11 @@ export class TemplateLoginComponent implements OnInit {
         console.log("false");
         console.log(data.message);
         console.log(data.token);
-        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!");
+        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้ง!");
       }
     }, err => {
       if (!err.success) {
-        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้งค่ะ!");
+        window.alert("ไม่สามารถเข้าสู่ระบบได้ กรุณาลองใหม่อีกครั้ง!");
       }
     });
   }

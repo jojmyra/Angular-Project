@@ -82,6 +82,9 @@ import { LayoutModule } from '@angular/cdk/layout';
       {
         path: 'admin',
         component: AdminComponent
+      },{
+        path: 'dashboard',
+        component: AdminDashboardComponent
       },
       {
         path: 'products/:id',
